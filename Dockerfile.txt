@@ -1,0 +1,25 @@
+create two files 1) index.html 2) Dockerfile
+
+mkdir omkar 
+
+cd omkar
+
+touch index.html
+simple html program
+
+touch Dockerfile
+FROM nginx:alpine
+WORKDIR index.html\usr\share\enginx\html\
+COPY  . .
+EXPOSE 80
+
+
+comand :- sudo Docker build -t (project_name) .
+
+output: image genrate
+
+2) sudo Docker images 
+
+3) sudo Docker run -d -p 8080:80 (project_name)
+
+open Brower:- 0.0.0.0:8080 ----> disply index.html
