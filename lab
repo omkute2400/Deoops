@@ -1,0 +1,22 @@
+Git Lab
+
+create acoount on gitlab
+(create new project on gitlab add some content in it , copy project url)
+git clone <gitlab-project-url>
+cd sampal
+ls
+git branch branch1
+git cheackout branch1
+ls
+touch demo.txt
+ls
+git cheackout master
+git cheakout branchh1
+git add .
+git commit -m "first change"
+ls
+git cheackout master
+git push origin branch1
+git cheakout master
+ls
+git pull origin master
