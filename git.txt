@@ -1,0 +1,31 @@
+git config --global user.name "kartik"
+git config --global user.email "mail"
+git config --list
+git init krepo
+cd krepo
+list -a
+touch memo.txt
+git add .
+git status
+git commit -m "first change"
+git log
+git branch "branch1"
+git checkout "branch1"
+touch file.txt
+git add .
+git commit -m "change2"
+git status
+git checkout master
+git merge branch1
+
+
+
+jenkins
+
+sudo systemctl enable jenkins
+
+sudo systemctl start jenkins
+
+sudo systemctl status jenkins
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword 
